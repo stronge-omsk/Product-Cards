@@ -17,6 +17,7 @@
   flex-flow: column wrap;
   align-content: space-between;
   height: 600px; 
+  width: 98%;
 }
 
 .cardsList::before,
@@ -30,6 +31,7 @@
 @media screen and (max-width: 1150px) {
   .productCard {
     background-color:royalblue;
+    width: 45%;
   }
 .productCard:nth-child(2n+1) { order: 1; }
 .productCard:nth-child(2n+2) { order: 2; }
@@ -38,9 +40,10 @@
 }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 672px) {
   .productCard {
     background-color: olivedrab;
+    width: 95%;
   }
   .cardsList {
     justify-content: center;
