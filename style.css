@@ -1,7 +1,7 @@
 .productCard {
   margin-left: 10px;
   padding: 10px;
-  width: 32%;
+  width: 30%;
   margin-bottom: 2%;
   color: white;
   background-color: green;
@@ -18,6 +18,7 @@
   align-content: space-between;
   height: 600px; 
   width: 98%;
+  padding-left: 15px;
 }
 
 .cardsList::before,
@@ -43,7 +44,7 @@
 @media screen and (max-width: 672px) {
   .productCard {
     background-color: olivedrab;
-    width: 95%;
+    width: 90%;
   }
   .cardsList {
     justify-content: center;
