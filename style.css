@@ -25,7 +25,7 @@ html {
   width: fit-content;
   color: black;
   font-size: larger;
-  height: 36%;
+  height: 33%;
   width: 100%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -77,26 +77,36 @@ html {
   padding-top: 40px;
   font-size: 25px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* .dataPrice::before {
-  content: '$';
-} */
+.favoriteBtn {
+  flex: 1;
+  text-align: right;
+  padding-top: 6px;
+}
 
-.favorite {
+/* .favorite {
   display: flex;
   justify-content: flex-end;
   background-color: transparent;
   margin-top: -5px;
-}
+} */
 
-.favoriteBtn:hover {
-  background-color: rgb(216, 88, 88);
+ /* .favoriteBtn:hover {
+  background-image: url(image/like\(1\).png);
+  background-position: right;
+  background-repeat: no-repeat;
 
+}  */
+
+.buttonHeart:hover {
+  background-image: url(image/like\(1\).png);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1100px) {
@@ -114,13 +124,9 @@ html {
     background-color: white;
     color: black;
     font-size: larger;  
-    height: 33%;
+    height: 30%;
   }
-  /* .favoriteBtn {
-    display: flex;
-    justify-content: flex-end;
-    background-color: transparent;
-  } */
+  
 
   .productCard:nth-child(2n+1) {
     order: 1;
@@ -143,6 +149,7 @@ html {
   font-weight: normal;
   border-bottom: 1px dotted #fff;
   letter-spacing: 0.2px;
+  margin-left: 5%;
 }
 
 .monthlyCost:hover {
@@ -157,7 +164,7 @@ html {
   }
 
   .shortDescription {
-    height: 40%;
+    height: 37%;
   }
 
   .publicationDate {
@@ -165,10 +172,6 @@ html {
   }
   .cardsList {
     height: 100%;
-  }
-
-  .favorite {
-    display: none;
   }
 
   .cardsList {
