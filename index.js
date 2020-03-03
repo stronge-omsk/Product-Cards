@@ -11,10 +11,11 @@ const cardList = [
     date: 'NEW',
     monthlyCost: '35k/mo',
     mail: 'Email Agent',
+    infBroker:'Brokered by Keller Williams San Francisco',
     
   },
   {
-    image: 'https://ap.rdcpix.com/4aca56872cb7fcdc0504e0b40511b068l-m2021323363od-w480_h360.jpg',
+    image: 'image/ed9eff011b291d0d1cdcde0b4bb3f2a1l-m3484510386xd-w1020_h770_q80.jpg',
     price: '$ 1550000',
     bed: '4 bed',
     bath: '3 bath',
@@ -25,6 +26,7 @@ const cardList = [
     date: 'NEW',
     monthlyCost: '35k/mo',
     mail: 'Email Agent',
+    infBroker:'Brokered by Keller Williams San Francisco',
     
   },
   {
@@ -39,6 +41,7 @@ const cardList = [
     date: 'NEW',
     monthlyCost: '35k/mo',
     mail: 'Email Agent',
+    infBroker:'Brokered by Keller Williams San Francisco',
     
   },
   {
@@ -53,6 +56,7 @@ const cardList = [
     date: 'NEW',
     monthlyCost: '35k/mo',
     mail: 'Email Agent',
+    infBroker:'Brokered by Keller Williams San Francisco',
     
   },
   {
@@ -67,6 +71,7 @@ const cardList = [
     date: 'NEW',
     monthlyCost: '35k/mo',
     mail: 'Email Agent',
+    infBroker:'Brokered by Keller Williams San Francisco',
     
   },
   {
@@ -81,6 +86,7 @@ const cardList = [
     date: 'NEW',
     monthlyCost: '35k/mo',
     mail: 'Email Agent',
+    infBroker:'Brokered by Keller Williams San Francisco',
     
   }
 ];
@@ -93,10 +99,14 @@ function render(array) {
   for (i = 0; i < array.length; i++) {
     const cardItem = array[i];
     const like = $('<img src="image/like.png" class="buttonHeart">');
-    const card = $('<div class="productCard">');
+    const card = $('<div class="productCard ">');
+    // card.text(cardItem.image);
     list.append(card);
     const broker = $('<div class="info-broker">');
     card.append(broker);
+    const brokeredBy = $('<span>');
+    brokeredBy.text(cardItem.infBroker);
+    broker.append(brokeredBy);
     const date = $('<div class="publicationDate">');
     card.append(date);
     date.text(cardItem.date);
