@@ -1,6 +1,6 @@
 const cardList = [
   {
-    image: 'image/2149855ac60a8725a59832fd6f28667dl-m3313922851od-w1024_h768.jpg',
+    image: 'url(image/0061f7789c19f3d57eab07245f452af3l-m3652801483xd-w1020_h770_q80.jpg)',
     price: '$ 1250000',
     bed: '3 bed',
     bath: '2 bath',
@@ -15,7 +15,7 @@ const cardList = [
     
   },
   {
-    image: 'image/ed9eff011b291d0d1cdcde0b4bb3f2a1l-m3484510386xd-w1020_h770_q80.jpg',
+    image: 'url(image/111759af65ac51715c2587e462fb1213l-m2882920802xd-w1020_h770_q80.jpg)',
     price: '$ 1550000',
     bed: '4 bed',
     bath: '3 bath',
@@ -30,7 +30,7 @@ const cardList = [
     
   },
   {
-    image: 'https://ap.rdcpix.com/4599ba5ec87c72391d1fc2849cc88b01l-m3354640781od-w480_h360.jpg',
+    image: 'url(image/2149855ac60a8725a59832fd6f28667dl-m3313922851od-w1024_h768.jpg)',
     price: '$ 1250000',
     bed: '3 bed',
     bath: '2 bath',
@@ -45,7 +45,7 @@ const cardList = [
     
   },
   {
-    image: 'https://ap.rdcpix.com/0e67ff348c054de03973ab9000265db6l-m1236550273od-w480_h360.jpg',
+    image: 'url(image/553560e0525113ccad5458dac19247cdl-m4283571886od-w1024_h768.jpg)',
     price: '$ 1950000',
     bed: '6 bed',
     bath: '5 bath',
@@ -60,7 +60,7 @@ const cardList = [
     
   },
   {
-    image: 'https://ap.rdcpix.com/dd544d3ce93f4cb0060e5bfb04068568l-m164259387od-w480_h360.jpg',
+    image: 'url(image/b711c6deeb4ebbbceb8f813769a640bel-m3436390206xd-w1020_h770_q80.jpg)',
     price: '$ 1250000',
     bed: '4 bed',
     bath: '2 bath',
@@ -75,7 +75,7 @@ const cardList = [
     
   },
   {
-    image: 'https://ap.rdcpix.com/f8079b66f53bb8de3ade3170fa4967a9l-m1880882882od-w480_h360.jpg',
+    image: 'url(image/ed9eff011b291d0d1cdcde0b4bb3f2a1l-m3484510386xd-w1020_h770_q80.jpg)',
     price: '$ 1250000',
     bed: '3 bed',
     bath: '2 bath',
@@ -99,8 +99,7 @@ function render(array) {
   for (i = 0; i < array.length; i++) {
     const cardItem = array[i];
     const like = $('<img src="image/like.png" class="buttonHeart">');
-    const card = $('<div class="productCard ">');
-    // card.text(cardItem.image);
+    const card = $('<div class="productCard">');
     list.append(card);
     const broker = $('<div class="info-broker">');
     card.append(broker);
@@ -139,6 +138,7 @@ function render(array) {
     const contactAgent = $('<button href="#" class="mail-agent">');
     contactAgent.text(cardItem.mail);
     description.append(contactAgent);
+    card.css({"background-image":cardItem.image});
  
 
 
